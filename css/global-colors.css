@@ -1,0 +1,21 @@
+:root {
+    --c01: #8E793E;
+    --c02: #AD974F;
+    --c03: #231F20;
+    --c04: #EAEAEA;
+    --c05: #231f20e0
+
+}
+
+body, a {
+    background-color: var(--c03);
+    color: var(--c04)
+}
+
+h2, .logo, .highlight {
+    color: var(--c02)
+}
+
+h1 {
+    color: var(--c04)
+}

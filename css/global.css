@@ -1,0 +1,51 @@
+@import url("/css/global-colors.css");
+@import url("/css/global-text.css");
+@import url("/css/global-header&footer.css");
+
+body {
+    margin:0px;
+}
+
+.content-width {
+    max-width: 1200px;
+    padding: 0px 40px;
+    margin: auto;
+}
+
+.button_01 {
+    border: 1px solid var(--c04);
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.button_01:hover {
+    border: 1px solid var(--c02);
+    color: var(--c03);
+    background-color: var(--c02);
+}
+
+.button_container {
+    padding: 20px 0px;
+}
+
+hr {
+    border: 1px solid var(--c01);
+}
+
+.about_header_container {
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+}
+
+/*-------- media ---------- */
+
+@media (max-width: 1000px) {
+    .content-width {
+        padding: 0px 10px;
+    }
+
+    .about_header_container {
+        padding: 100px 0px 0px 0px;
+    }
+}

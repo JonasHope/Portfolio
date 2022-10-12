@@ -1,0 +1,126 @@
+header {
+    position: fixed;
+    background-color: var(--c03);
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 2px var(--c01);
+}
+
+.header_container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*---- logo ----*/
+
+.logo_container {
+    height: 65px;
+    margin: 0px 30px;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    top: -7px;
+}
+
+.logo_01 {
+    font-family: var(--ff01);
+    font-size: 2.2rem;
+    height: 45px;
+}
+
+.logo_02 {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/*---- nav ----*/
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li a {
+    padding: 20px;
+    margin: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav li a:hover {
+    background-color: var(--c02);
+    color: var(--c03);
+}
+
+.current_page {
+    color: var(--c02);
+    font-weight: 700;
+}
+
+.current_page:hover{
+    color:var(--c02);
+    background-color: var(--c03);
+}
+
+/* ---- hamburger ----*/
+
+.hamburger_container {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger_container:hover {
+    opacity: 0.8;
+}
+
+/*----- media -----*/
+
+@media (max-width:900px) {
+    nav {
+        position: absolute;
+        left: 50%;
+        top: 190px;
+        transform: translate(-50%,-50%);
+        background-color: var(--c03);
+        width: 100%;
+        z-index: 999;
+        padding: 10px 0px;
+        box-shadow: 0px 10px 12px -15px var(--c01);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 20px auto;
+    }
+
+    .hide_nav {
+        display:none;
+    }
+
+    .hamburger_container {
+        display: block;
+        margin: 10px;
+    }
+
+    .hamburger {
+        font-size: 35px;
+    }
+}

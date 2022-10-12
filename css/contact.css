@@ -1,0 +1,104 @@
+.contact_container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.contact_content h1 {
+    padding-left: 10px;
+}
+
+.contact_content {
+    padding: 40px;
+    color: var(--c02);
+    font-family: var(--ft01);
+}
+
+.contact_form {
+    padding: 40px 10px;
+}
+
+.contact_form p {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type=subject], form input[type=text], form input[type=email], form textarea {
+    border: none;
+    border-bottom: 2px solid var(--c02);
+    background-color: var(--c03);
+    color: var(--c04);
+    padding: 12px;
+    margin: 20px 0px 2px 0px;
+    width: 90%;
+    resize: none;
+}
+
+.submit_btn {
+    border: none;
+    padding: 25px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: var(--c01);
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    cursor: pointer;
+    color: var(--c03);
+    background-image: linear-gradient(var(--c02), var(--c02));
+    background-size: 100% 0em;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease-in-out;
+}
+
+.submit_btn:hover,
+.submit_btn:active,
+.submit_btn:focus {
+    background-size: 100% 100%;
+}
+
+.label_container {
+    display:flex;
+    justify-content: space-between
+}
+
+
+.error {
+    color: var(--c04);
+    display:none;
+}
+
+.error_msg {
+    display:flex;
+    justify-content: flex-end;
+    margin: 0px 22px 20px 0px;
+}
+
+.successfully {
+    background-color: var(--c02);
+    color: var(--c03);
+    text-align: center;
+    padding:10px 0px;
+    margin:10px auto;
+    display:none
+}
+
+.success_01 {
+    font-size: 1.2rem;
+}
+
+.success_02 {
+    font-size: 1rem;
+}
+
+.successfully p {
+    color: var(--c05);
+}
+
+footer {
+    background-color: var(--c05);
+}

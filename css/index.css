@@ -1,0 +1,282 @@
+/*---- featured section ----*/
+
+.featured-container {
+    background-image: url("/images/feat-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: auto;
+    background-position: bottom left;
+}
+
+.layer {
+    background: rgba(0,0,0,0.7);
+    height: 100vh;
+    background-size: cover;
+}
+
+.ft_text {
+    position: relative;
+    top: 700px;
+    left: 200px;
+    max-width: 500px;
+    text-shadow: 0 3px 6px var(--c03);
+}
+
+.ft_01 {
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.ft_02 {
+    margin: 5px 0px 0px 80px
+}
+
+/*---- Sections ----*/
+
+.section_space {
+    margin: 5vw auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vh;
+}
+
+.project_text p {
+    max-width: 40%;
+    font-size: 1.2rem;
+    margin: 100px 0;
+}
+
+/*----- Qualifications section -------*/
+
+.qualifications h2 {
+    margin-top: 0px;
+}
+
+.align-fix {
+    display: flex;
+}
+
+.space-fix {
+    margin: 5px 0px 0px 10px
+}
+
+.highlight {
+    text-transform: capitalize;
+    margin: 5px 0px;
+    font-weight: 700;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date-quals {
+    margin: 0px;
+}
+
+.qual-par {
+    margin: 30px 0px;
+}
+
+.img-quals img{
+    max-width: 450px;
+}
+/*---- slider ----*/
+
+.dots {
+    text-align: center;
+    margin: 20px;
+}
+
+.dots > a {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 15px;
+    padding: 3px;
+    background-color: var(--c02);
+}
+
+.slider_card {
+    margin: 0px;
+}
+
+.slider_text {
+    padding: 15px;
+    max-width: 400px;
+}
+
+.my_images {
+    width: 100%;
+    height:auto;
+}
+
+.slider {
+  max-width: 450px;
+  margin: auto;
+  padding: 5px;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    box-shadow: 0px 0px 6px var(--c01);
+}
+
+.slides > div {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slides::-webkit-scrollbar {
+    display:none
+}
+
+.flex-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+
+.flex-title p {
+    margin:0px;
+    font-size: 1rem;
+}
+
+.icons {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_01 {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.icon_02 {
+    width: 60px;
+    height: 60px;
+}
+
+/*----- Modal -----*/
+
+.modal_class {
+    position: fixed; 
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: var(--c05);
+    display: none;
+}
+
+.modal_content {
+    max-width: 80%;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--c03);
+    background-color: var(--c04);
+    padding: 0px 15px;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--c01);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#my_img, 
+.icon_02,
+.icon_01,
+.dot {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#my_img:hover,
+.icon_02:hover,
+.icon_01:hover,
+.dot:hover {
+  opacity: 0.7;
+}
+
+/*------- Media -------*/
+
+@media (max-width: 1100px) {
+    .section_space,
+    .section_projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_projects,
+    .button_container,
+    .section_content h2 {
+        text-align: center;
+    }
+
+    .button_container,
+    .qual_par_container {
+        margin-bottom: 40px
+    }
+
+    .align-fix {
+        flex-direction: column;
+    }
+
+    .img-quals img,
+    .slider {
+        max-width: 300px;
+    }
+
+    .project_text p {
+        max-width: 500px;
+        padding: 0px 10px;
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .ft_text {
+        top: 450px;
+        left: 10px;
+        padding: 5px;
+        max-width: 320px
+    }
+
+    .ft_01 {
+        font-size: 2.5rem;
+    }
+    .ft_02 {
+        font-size: 1.5rem;
+        margin: 10px 20px;
+    }
+
+    .modal_content {
+        max-width: 95%;
+    }
+}

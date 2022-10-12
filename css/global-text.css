@@ -1,0 +1,49 @@
+.ff_ganache {
+    font-family: ganache,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ff_nimbus{
+    font-family: nimbus-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --ff01: ganache,sans-serif;
+    --ff02: nimbus-sans,sans-serif;
+}
+
+body {
+    font-family: var(--ff02);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    text-transform: capitalize;
+    color: var(--c02);
+    margin: 5px 0px;
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0px;
+}
