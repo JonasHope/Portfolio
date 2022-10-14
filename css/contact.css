@@ -69,7 +69,6 @@ form input[type=subject], form input[type=text], form input[type=email], form te
 
 .error {
     color: var(--c04);
-    display:none;
 }
 
 .error_msg {

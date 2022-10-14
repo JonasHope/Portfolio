@@ -14,8 +14,6 @@ const emailError = document.querySelector(`#email-error`);
 const textArea = document.querySelector(`#textarea`);
 const textError = document.querySelector(`#text-error`);
 
-
-
 function formCheck(event) {
     event.preventDefault();
 
@@ -25,7 +23,7 @@ function formCheck(event) {
         nameError.style.display = "block";
     };
 
-    if (check(subject.value, 15) === true) {
+    if (check(subject.value, 3) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
@@ -43,17 +41,20 @@ function formCheck(event) {
         textError.style.display = "block";
     };
 
-    if (check(fullName.value, 5) && check(subject.value, 15) && checkEmail(email.value) && check(textArea.value, 25)) {
-        textArea.value = "";
+    if (check(fullName.value, 5) && check(subject.value, 3) && checkEmail(email.value) && check(textArea.value, 25)) {
+        return button.disabled = false
+        /*textArea.value = "";
         subject.value = "";
         successfully.style.display = "block";
         setTimeout(function() {
             window.location.href = "index.html";
-        },5000);
+        },5000);*/
+    } else {
+        return button.disabled = true
     };
 };
 
-form.addEventListener("submit", formCheck);
+/*form.addEventListener("submit", formCheck);
 
 function check(value, length) {
     if (value.trim().length > length) {
@@ -61,7 +62,7 @@ function check(value, length) {
     } else {
         return false;
     };
-};
+};*/
 
 function checkEmail(email) {
     const regEx = /^([a-z0-9_\.\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
