@@ -38,6 +38,22 @@ hr {
     text-align: center;
 }
 
+#my_img, 
+.icon_02,
+.icon_01,
+.dot {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#my_img:hover,
+.icon_02:hover,
+.icon_01:hover,
+.dot:hover {
+  opacity: 0.7;
+}
+
 /*-------- media ---------- */
 
 @media (max-width: 1000px) {
