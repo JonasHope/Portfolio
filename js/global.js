@@ -9,3 +9,9 @@ function hamburgerMenu() {
 	  nav.classList.add("hide_nav");
 	}
   };
+
+  /*------ links --------*/
+
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}

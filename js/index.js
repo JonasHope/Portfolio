@@ -21,7 +21,3 @@ const span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-function openInNewTab(url) {
-  window.open(url, '_blank').focus();
-}
